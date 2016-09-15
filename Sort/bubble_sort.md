@@ -8,7 +8,7 @@ There are two pointers **i** & **j**. Pointer **i** seperates the sorted area fr
 Pointer **j** successively swaps two adjacent elements and push the biggest (or smallest) element into the sorted area.
 
 Complexity: O(n^2)
-```
+```cpp
 void bubbleSort1(int a[],int n){
     for(int i = n-1; i > 0; i--){
         for(int j = 0; j < i; j++){
@@ -21,7 +21,7 @@ void bubbleSort1(int a[],int n){
     }
 }
 ```
-```
+```cpp
 include <algotithm >
 
 void bubbleSort3(int a[],int n){
