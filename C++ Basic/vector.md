@@ -13,7 +13,7 @@ vector<int> fourth (third);
 vector<int> v;
 ```
 #### Interators:  
-```
+```cpp
 v.begin();
 v.end();
 v.rbegin();
@@ -36,10 +36,10 @@ v.empty();
 ```
 #### Element Access:
 Access element.
-````
+```
 v[0].
 v.at(0).  // the difference of [] and .at() is that .at() do the boundary test.
-````
+```
 Access first element and last element.
 ```
 v.front();

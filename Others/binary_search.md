@@ -3,7 +3,7 @@
 Compare the value we seached **s** with the middle value **m** of an sorted array, if **s** = **m** then we find the value. 
 If **s** < **m**, then we don't need to search the value listed after m; on the contary, if If **s** > **m**, then we don't need to search the value listed before m.
 #### c++:
-```
+```cpp
 #include <iostream>
 #include <vector>
 
@@ -40,7 +40,7 @@ int main(){
 ```
 
 ### python:
-```
+```python
 def binarySearch(a, svalue):
     l, h = 0, len(a) - 1
     while l <= h:
@@ -53,6 +53,6 @@ def binarySearch(a, svalue):
         else:
             l = m + 1
 
-a = [1,2,3,4,5]
+a = [i for i in range(5)]
 binarySearch(a, 4)
 ```
