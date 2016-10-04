@@ -39,7 +39,7 @@ int main(){
 }
 ```
 
-### python:
+#### python:
 ```python
 def binarySearch(a, svalue):
     l, h = 0, len(a) - 1

@@ -3,7 +3,7 @@
 Vectors are sequence containers representing arrays that can change in size.
 
 #### Constructor:
-```
+```cpp
 include <vector>
 
 vector<int> first;
@@ -11,6 +11,8 @@ vector<int> second (4,100);
 vector<int> third (second.begin(),second.end());
 vector<int> fourth (third);
 vector<int> v;
+int myints[] = {2, 7, 11, 15};
+vector<int> ans, n(myints, myints + sizeof(myints) / sizeof(int) ) ;
 ```
 #### Interators:  
 ```cpp
