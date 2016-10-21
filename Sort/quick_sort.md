@@ -18,17 +18,19 @@ void qsort(int a[], int l, int h) {
     }
 }
 
-int partition(int a[], int l,int h) {
-    int pivot = a[l];
-    int i = l, m = 0;
-    for(int j = l + 1; j < h; j++) {
-        if(a[j] < pivot) {
-            swap(a[i], a[j]);
-            i++;
+int partition(int *a, int l, int h) {
+    int pivot = a[h - 1];
+    int i = l, j;
+    for(j = l; j < h - 1; j++) {
+        if(a[j] <= pivot) {
+            int tmp = a[i];
+            a[i++] = a[j];
+            a[j] = tmp;
         }
     }
-    m = i;
-    swap(a[i], pivot);
-    return m;  
+    int tmp = a[i];
+    a[i] = a[h - 1];
+    a[h - 1] = tmp;
+    return i;
 }
 ```
