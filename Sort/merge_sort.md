@@ -3,7 +3,7 @@
 We divide an array into a left subarray and a right subarray and recursively do this action until there is only one element in the subarray. 
 Sort the two subarrarys and then merge them together.
 
-Time Complexity: O(nlog n)
+Time Complexity: O(nlog n)  
 Space Complexity: O(n)
 
 ```cpp
